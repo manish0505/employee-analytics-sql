@@ -1,0 +1,51 @@
+Employee_ID,First_Name,Last_Name,Gender,Birthdate,Job_Title,Job_Category,Salary,Experience_Level,Work_Setting,Location,Company_Size,Hire_Date,Age
+2015A1992,LISA,RUSSELL,Female,1992-04-20,"Data Analyst","Data Analysis",95000,Entry-level,In-person,"United States",M,2015-11-30,32
+2015B1992,SHARAD,GARBHARRAN,Male,1992-04-20,"Data Analyst","Data Analysis",75000,Entry-level,In-person,"United States",M,2015-01-20,32
+2010R1960,MALCOLM,ADAMS,Male,1960-04-20,"Data Analyst","Data Analysis",110000,Senior,Remote,Poland,M,2010-06-30,64
+2010S1960,JAMES,AGUILA,Male,1960-04-20,"Data Analyst","Data Analysis",143000,Senior,Remote,Canada,M,2010-06-30,64
+2015C1992,PHYLLIS,ADAMS,Male,1992-04-20,"Data Analyst","Data Analysis",30000,Entry-level,Hybrid,India,M,2016-07-15,32
+2015D1992,WILMA,ANDERSON,Female,1992-04-20,"Data Analyst","Data Analysis",50000,Entry-level,Hybrid,"United States",L,2015-07-15,32
+2010T1960,TYRONE,ADAMS,Male,1960-04-20,"Data Analyst","Data Analysis",110000,Senior,Remote,"United States",M,2010-06-30,64
+2010U1960,LEAH,BYERLY,Male,1960-04-20,"Business Data Analyst","Data Analysis",180000,Senior,Remote,"United States",L,2010-06-30,64
+2010V1960,LAYA,VELASQUEZ,Female,1960-04-20,"Business Data Analyst","Data Analysis",78000,Senior,Remote,"United States",L,2010-06-30,64
+2015R1980,JOHN,VIVANCO,Male,1980-11-20,"Business Data Analyst","Data Analysis",17000,Mid-level,Remote,Russia,L,2015-08-20,43
+2015S1980,YOLANDA,HODGES,Female,1980-11-20,"Business Data Analyst","Data Analysis",36000,Mid-level,In-person,Ghana,S,2015-08-20,43
+2015T1980,LILLIAN,GONU,Female,1980-11-20,"Business Data Analyst","Data Analysis",35000,Mid-level,Remote,"United States",M,2012-08-20,43
+2015E1992,JOEY,ANDERSON,Male,1992-04-20,"Financial Data Analyst","Data Analysis",56500,Entry-level,Hybrid,"United States",L,2015-11-15,32
+2015F1992,KATHLEEN,BUTLER,Female,1992-04-20,"Financial Data Analyst","Data Analysis",40000,Entry-level,In-person,Nigeria,S,2018-07-15,32
+2015E1980,LEKETHA,GIL,Male,1980-11-20,"Financial Data Analyst","Data Analysis",130000,Mid-level,Remote,"United States",L,2012-08-20,43
+2015K1980,LESLIE,FIRFER,Female,1980-11-20,"Financial Data Analyst","Data Analysis",75000,Mid-level,In-person,"United States",M,2012-08-20,43
+2015G1992,TANDA,JACOBS,Male,1992-04-20,"Financial Data Analyst","Data Analysis",100000,Entry-level,Hybrid,"United States",L,2015-07-15,32
+2010W1960,VERNA,TORRANCE,Female,1960-04-20,"Marketing Data Analyst","Data Analysis",200000,Senior,Remote,"United Kingdom",S,2010-06-30,64
+2015L1980,JEAN,DANIELS,Female,1980-11-20,"Staff Data Analyst","Data Analysis",179998,Mid-level,Remote,"Saudi Arabia",S,2012-08-20,43
+2015M1980,GRESHYNKA,THOMAS,Female,1980-11-20,"Sales Data Analyst","Data Analysis",60000,Mid-level,In-person,Nigeria,M,2015-08-20,43
+2009Q1969,KATHLEEN,MORAN,Male,1969-09-20,"Staff Data Analyst","Data Analysis",15000,Executive,In-person,Canada,M,2009-08-20,54
+2015H1992,SHEILA,LOVE,Female,1992-04-20,"Compliance Data Analyst","Data Analysis",60000,Entry-level,Remote,"United States",L,2015-07-15,32
+2015J1992,JEFFREY,STURT,Male,1992-04-20,"Compliance Data Analyst","Data Analysis",30000,Entry-level,Remote,Nigeria,L,2018-07-15,32
+2015K1992,JASPER,NELSON,Male,1992-04-20,"BI Data Analyst","Data Analysis",25000,Entry-level,Remote,Netherlands,M,2017-06-15,32
+2015L1992,JACQUELYN,ANDERSON,Female,1992-04-20,"BI Data Analyst","Data Analysis",50000,Entry-level,Remote,Kenya,S,2018-07-15,32
+2015M1992,SEAN,GARVEY,Male,1992-04-20,"BI Data Analyst","Data Analysis",85000,Entry-level,Remote,"United States",M,2015-07-30,32
+2015N1992,JORGE,ROBLES,Male,1992-04-20,"BI Data Analyst","Data Analysis",99000,Entry-level,Remote,"United States",L,2015-07-15,32
+2015N1980,MICHAEL,BREIER,Male,1980-11-20,"BI Data Analyst","Data Analysis",70000,Mid-level,Remote,"United States",M,2012-08-20,43
+2015O1992,"MARY ELIZABETH",YOPCHICK,Female,1992-04-20,"BI Data Analyst","Data Analysis",60000,Entry-level,Remote,"United States",M,2015-07-15,32
+2015P1992,NELSON,LEWIS,Male,1992-04-20,"BI Data Analyst","Data Analysis",57000,Entry-level,Remote,"United States",L,2016-08-20,32
+2015Q1992,TAHIR,WILLIAMS,Male,1992-04-20,"BI Data Analyst","Data Analysis",55000,Entry-level,Hybrid,"United States",S,2015-02-15,32
+2015O1980,JOHNNIE,"MCKINNEY JR",Male,1980-11-20,"BI Data Analyst","Data Analysis",100000,Mid-level,Remote,"United States",M,2012-08-20,43
+200A1969,MAIESHA,BAPTISTE,Male,1969-09-20,"BI Data Analyst","Data Analysis",150000,Executive,Remote,"United States",L,2008-08-20,54
+2015P1980,MARITA,SULLIVAN,Female,1980-11-20,"BI Data Analyst","Data Analysis",98000,Mid-level,In-person,"United States",M,2012-08-20,43
+2015Q1980,CHERYL,BYNUM,Female,1980-11-20,"Data Analyst","Data Analysis",95000,Mid-level,Remote,"United States",M,2012-08-20,43
+2015B1980,NIRMALA,GONU,Female,1980-11-20,"Data Analyst","Data Analysis",75000,Mid-level,Remote,"United States",M,2012-08-20,43
+2015A1980,ALEXANDRA,BOUZIOTIS,Male,1980-11-20,"Data Analyst","Data Analysis",115000,Mid-level,In-person,"United States",M,2012-08-20,43
+2015C1980,PATRICIA,SMITH,Female,1980-11-20,"Data Analyst","Data Analysis",105000,Mid-level,In-person,"United States",M,2012-08-20,43
+2015D1980,LIGI,ABRAHAM,Male,1980-11-20,"Data Analyst","Data Analysis",104000,Mid-level,In-person,"United States",M,2012-08-20,43
+2010X1960,RICHARD,MACCARTHY,Male,1960-04-20,"Data Analyst","Data Analysis",157500,Senior,Remote,"United States",M,2010-06-30,64
+2010A1960,ROBERT,CLARK,Male,1960-04-20,"Data Analyst","Data Analysis",132500,Senior,Remote,"United States",M,2010-06-30,64
+2015I1980,RICHARD,LESIAK,Male,1980-11-20,"Data Analyst","Data Analysis",85000,Mid-level,In-person,"United States",M,2012-08-20,43
+2015J1980,ROBERT,PAPINEAU,Male,1980-11-20,"Data Analyst","Data Analysis",75000,Mid-level,In-person,"United States",M,2012-08-20,43
+2010I1960,MAE,WRIGHT,Female,1960-04-20,"Data Analyst","Data Analysis",93918,Senior,In-person,"United States",M,2010-06-30,64
+2010O1960,SALLY,ZAMORANO,Female,1960-04-20,"Data Analyst","Data Analysis",51962,Senior,In-person,"United States",M,2010-06-30,64
+2010P1960,MELISSA,AFRIYIE,Female,1960-04-20,"Data Analyst","Data Analysis",166000,Senior,In-person,"United States",M,2010-06-30,64
+2010J1960,TUSHAR,ADVANI,Male,1960-04-20,"Data Analyst","Data Analysis",73000,Senior,In-person,"United States",M,2010-06-30,64
+2015R1992,JOY,COLEMAN,Female,1992-04-20,"Data Analyst","Data Analysis",90000,Entry-level,Remote,"United States",S,2015-06-30,32
+2015S1992,DANIEL,ADUGBA,Male,1992-04-20,"Data Analyst","Data Analysis",60000,Entry-level,Remote,"United States",S,2015-07-30,32
+2010H1960,JOY,MARTINEZ,Female,1960-04-20,"Data Analyst","Data Analysis",80000,Senior,Remote,"United States",S,2010-06-30,64

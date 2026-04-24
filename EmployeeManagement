@@ -1,0 +1,263 @@
+-- Create Database
+CREATE DATABASE EmployeeManagement;
+
+-- Use Database
+USE EmployeeManagement;
+
+-- Create EmployeeDetails Table
+CREATE TABLE EmployeeDetails (
+    EmployeeID int, 
+    FirstName varchar(50), 
+    LastName varchar(50), 
+    Age int, 
+    Gender varchar(50)
+);
+
+-- Create EmployeeSalary Table
+CREATE TABLE EmployeeSalary (
+    EmployeeID int, 
+    JobTitle varchar(50), 
+    Salary int
+);
+
+-- Insert Data into EmployeeDetails Table
+INSERT INTO EmployeeDetails VALUES
+(2001, 'John', 'Smith', 28, 'Male'),
+(2002, 'Aurora', 'Johnson', 29, 'Female'),
+(2003, 'Pekka', 'Williams', 31, 'Male'),
+(2004, 'Sofia', 'Nieminen', 30, 'Female'),
+(2005, 'Elias', 'Virtanen', 33, 'Male'),
+(2006, 'Olivia', 'Korhonen', 32, 'Female'),
+(2007, 'William', 'Miller', 35, 'Male'),
+(2008, 'Ana', 'Wilson', 34, 'Female'),
+(2009, 'Michael', 'Martinez', 36, 'Male'),
+(NULL, 'Unknown', 'Unknown', NULL, NULL); 
+
+-- Insert Data into EmployeeSalary Table
+INSERT INTO EmployeeSalary VALUES
+(2001, 'Developer', 50000),
+(2002, 'Designer', 40000),
+(2003, 'Project Manager', 60000),
+(2004, 'Accountant', 45000),
+(2005, 'HR Manager', 55000),
+(2006, 'Marketing Specialist', 50000),
+(2007, 'Sales Executive', 52000),
+(2008, 'Finance Analyst', 48000),
+(2009, 'Operations Manager', 62000);
+
+
+-- Select Statements
+-- Select all from EmployeeDetails table
+SELECT * FROM EmployeeDetails;
+
+-- Select FirstName from EmployeeDetails table
+SELECT FirstName FROM EmployeeDetails;
+
+-- Select FirstName and LastName from EmployeeDetails table
+SELECT FirstName, LastName FROM EmployeeDetails;
+
+-- Select top 5 records from EmployeeDetails table
+SELECT TOP 5 * FROM EmployeeDetails;
+
+-- Select Distinct EmployeeID
+SELECT DISTINCT(EmployeeID) FROM EmployeeDetails;
+
+-- Select Distinct Gender
+SELECT DISTINCT(Gender) FROM EmployeeDetails;
+
+-- Sample Count for LastName
+SELECT COUNT(LastName) FROM EmployeeDetails;
+
+-- Select Count with column name as LastNameCount
+SELECT COUNT(LastName) AS LastNameCount FROM EmployeeDetails;
+
+-- Select all from EmployeeSalary table
+SELECT * FROM EmployeeSalary;
+
+
+-- Select Maximum Salary without Column Name
+SELECT MAX(Salary) FROM EmployeeSalary;
+
+-- Select Minimum Salary
+SELECT MIN(Salary) FROM EmployeeSalary;
+
+-- Select Average Salary
+SELECT AVG(Salary) FROM EmployeeSalary;
+
+
+-- Select Maximum Salary with Column Name
+SELECT MAX(Salary) as MaxSalary FROM EmployeeSalary;
+
+-- Select Minimum Salary
+SELECT MIN(Salary) as MinSalary FROM EmployeeSalary;
+
+-- Select Average Salary
+SELECT AVG(Salary) as AvgSalary FROM EmployeeSalary;
+
+
+--Maximum and Minimum Salary with Employee Name
+SELECT * 
+FROM EmployeeSalary;
+
+-- Select the maximum salary along with the corresponding employee name
+SELECT MAX(Salary) AS MaxSalary, 
+       (SELECT FirstName FROM EmployeeDetails WHERE EmployeeID = (SELECT EmployeeID FROM EmployeeSalary WHERE Salary = (SELECT MAX(Salary) FROM EmployeeSalary))) AS EmployeeName
+FROM EmployeeSalary;
+
+-- Select the minimum salary along with the corresponding employee name
+SELECT MIN(Salary) AS MinSalary, 
+       (SELECT FirstName FROM EmployeeDetails WHERE EmployeeID = (SELECT EmployeeID FROM EmployeeSalary WHERE Salary = (SELECT MIN(Salary) FROM EmployeeSalary))) AS EmployeeName
+FROM EmployeeSalary;
+
+
+-- Select all records from the EmployeeSalary table in the EmployeeManagement database
+SELECT * 
+FROM EmployeeManagement.dbo.EmployeeSalary;
+
+-- Select all records from the EmployeeDetails table in the EmployeeManagement database, handling errors with square brackets
+SELECT * 
+FROM [EmployeeManagement].dbo.EmployeeDetails;
+
+
+-- Where Statement
+-- Select data where FirstName is 'John'
+SELECT * FROM EmployeeDetails WHERE FirstName = 'John';
+
+-- Select data where Age is greater than 30
+SELECT * FROM EmployeeDetails WHERE Age > 30;
+
+-- Select LastNames starting with 'S'
+SELECT * FROM EmployeeDetails WHERE LastName LIKE 'S%';
+
+-- Select where FirstName is Null
+SELECT * FROM EmployeeDetails WHERE FirstName IS NULL;
+
+-- Group By, Order By
+-- Group By Gender with Count
+SELECT Gender, COUNT(Gender) AS GenderCount FROM EmployeeDetails GROUP BY Gender;
+
+-- Order By Gender Descending
+SELECT * FROM EmployeeDetails ORDER BY Gender DESC;
+
+-- Order By Age Descending
+SELECT * FROM EmployeeDetails ORDER BY Age DESC;
+
+
+-- Select data where FirstName is 'John':
+SELECT * FROM EmployeeDetails WHERE FirstName = 'John';
+
+-- Select data where FirstName is not 'John':
+SELECT * FROM EmployeeDetails WHERE FirstName <> 'John';
+
+-- Select data where Age is equal to 30:
+SELECT * FROM EmployeeDetails WHERE Age = 30;
+
+-- Select data where Age is greater than 30:
+SELECT * FROM EmployeeDetails WHERE Age > 30;
+
+-- Select data where Age is less than 30:
+SELECT * FROM EmployeeDetails WHERE Age < 30;
+
+-- Select data where Age is greater than or equal to 30:
+SELECT * FROM EmployeeDetails WHERE Age >= 30;
+
+-- Select data where Age is greater than or equal to 30 and Gender is 'Male':
+SELECT * FROM EmployeeDetails WHERE Age >= 30 AND Gender = 'Male';
+
+
+-- Select LastNames starting with 'K':
+SELECT * FROM EmployeeDetails WHERE LastName LIKE 'K%';
+
+-- Select LastNames with 'K' anywhere:
+SELECT * FROM EmployeeDetails WHERE LastName LIKE '%K%';
+
+-- Select LastNames with 'K', 'N' in the middle, and 'R' at the end (Korhonen Last Name not displayed because letters need to be in order):
+SELECT * FROM EmployeeDetails WHERE LastName LIKE 'K%N%R%';
+
+-- Select LastNames with 'K', 'O' in the middle, and 'N' at the end (in order):
+SELECT * FROM EmployeeDetails WHERE LastName LIKE 'K%O%N%';
+
+-- Select LastNames with 'K', any character, then 'NEN' (in order):
+SELECT * FROM EmployeeDetails WHERE LastName LIKE 'K%R%ONEN%';
+
+
+
+-- Select where EmployeeID is Null:
+SELECT * FROM EmployeeDetails WHERE EmployeeID IS NULL;
+
+-- Select where EmployeeID is Not Null (shows all data, without Null):
+SELECT * FROM EmployeeDetails WHERE EmployeeID IS NOT NULL;
+
+-- Select where FirstName is 'John' and 'Michael':
+SELECT * FROM EmployeeDetails WHERE FirstName IN ('John','Michael');
+
+-- Select where Age is between 30 and 35:
+SELECT * FROM EmployeeDetails WHERE Age BETWEEN 30 AND 35;
+
+-- Select where LastName starts with 'N' and Age is equal to 30:
+SELECT * FROM EmployeeDetails WHERE LastName LIKE 'N%' AND Age = 30;
+
+-- Select where FirstName is 'John' and LastName is 'Smith':
+SELECT * FROM EmployeeDetails WHERE FirstName = 'John' and LastName = 'Smith';
+
+
+-- Group By
+-- Distinct shows unique values; Group By groups and allows aggregation
+--
+-- Select Distinct Gender:
+SELECT DISTINCT Gender FROM EmployeeDetails;
+
+-- Group By Gender:
+SELECT Gender FROM EmployeeDetails GROUP BY Gender;
+
+-- Group By Gender with Count:
+SELECT Gender, COUNT(*) FROM EmployeeDetails GROUP BY Gender;
+
+-- Group By Gender with Count and rename column as GenderCount:
+SELECT Gender, COUNT(*) AS GenderCount FROM EmployeeDetails GROUP BY Gender;
+
+
+-- Select all and Group By Gender (displays all data with grouped Gender count):
+SELECT * From EmployeeDetails 
+SELECT Gender, COUNT(Gender) FROM EmployeeDetails GROUP BY Gender;
+
+-- Select all and Group By Gender and Age 31 above:
+SELECT * From EmployeeDetails 
+SELECT Gender, Age, COUNT(Gender) FROM EmployeeDetails WHERE Age > 31 GROUP BY Gender, Age;
+
+-- Select all and Group By Gender and Age above 31 with renamed column GenderCount:
+SELECT * From EmployeeDetails 
+SELECT Gender, Age, COUNT(Gender) AS GenderCount FROM EmployeeDetails WHERE Age > 31 GROUP BY Gender, Age;
+
+
+-- Order By Gender Descending:
+SELECT * FROM EmployeeDetails ORDER BY Gender DESC;
+
+-- Order By Gender Ascending:
+SELECT * FROM EmployeeDetails ORDER BY Gender ASC;
+
+-- Order By Age (Ascending by default):
+SELECT * FROM EmployeeDetails ORDER BY Age;
+
+-- Order By Age Descending:
+SELECT * FROM EmployeeDetails ORDER BY Age DESC;
+
+-- Order By Age and Gender (Age Ascending, Gender Descending):
+SELECT * FROM EmployeeDetails ORDER BY Age, Gender DESC;
+
+-- Order By Age and Gender (Both Descending):
+SELECT * FROM EmployeeDetails ORDER BY Age DESC, Gender DESC;
+
+-- Order By column numbers (1 for EmployeeID, 2 for FirstName):
+SELECT * FROM EmployeeDetails ORDER BY 1, 2;
+
+-- Order By column numbers and Descending for Age (column 4) and Gender (column 5):
+SELECT * FROM EmployeeDetails ORDER BY 4 DESC, 5 DESC;
+
+-- Order By column numbers and Ascending for Age (column 4) and Gender (column 5):
+SELECT * FROM EmployeeDetails ORDER BY 4 ASC, 5 ASC;
+
+
+
+
+

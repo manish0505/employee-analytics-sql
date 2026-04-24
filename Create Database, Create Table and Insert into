@@ -1,0 +1,40 @@
+-A simple way to start SQL: This code is straightforward and easy to understand.
+-Create a database
+-Create a table, Insert into or Insert information into the table, 
+-And finally, select or find the table with the desired information. 
+
+--Create database
+create database beginner;
+
+--Create table Employees 
+create table Employees (
+EmployeeID int,
+FirstName varchar(30),
+LastName varchar(30),
+Gender varchar(30),
+Age int );
+
+--Create table Salaries
+create table Salaries (
+EmployeeID int,
+JobTitle varchar(30),
+Salary int );
+
+--Insert into Employee table and Salaries table
+Insert into Employees values
+(202401, 'Rhona', 'Santiago', 'Female', 32),
+(202402, 'Gino','Yu', 'Male', 34),
+(202403, 'Cha','Sy', 'Male', 36);
+
+Insert into Salaries values
+(202401, 'Business Analyst', 3000),
+(202402, 'Business Analyst', 3000),
+(202403, 'Business Analyst', 4000);
+
+--Select Table "Employees"
+select *
+from Employees
+
+--Select the table "Salaries" even when using another database.
+select *
+from Beginner.dbo.Salaries
